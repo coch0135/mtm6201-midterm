@@ -25,11 +25,11 @@
         </ul>
     </nav>
 
-  <header class="wrapper"> <!-- wraps header with logo and nav menu, used 'header' instead of 'div' for accessibility -->
+  <header class="wrapper" role="banner"> <!-- wraps header with logo and nav menu, uses 'header' instead of 'div' and adds aria role for accessibility -->
 
     <img src="images/my-coffee-shop-logo.svg" alt="logo">
 
-    <nav class="main-nav"> <!-- navigation menu with class for skiplinks -->
+    <nav class="main-nav" role="navigation"> <!-- navigation menu with class for skiplinks and aria role -->
       <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Menu</a></li>
@@ -39,7 +39,7 @@
 
   </header>
 
-  <main class="main-content"> <!-- contains main content between header and footer, used 'main' instead of 'div' for accessibility, added class for skiplinks -->
+  <main class="main-content" role="main"> <!-- contains main content between header and footer, uses 'main' instead of 'div' for accessibility, added class for skiplinks -->
 
     <div class="banner"> <!-- CONTAINS BANNER SECTION -->
 
@@ -48,10 +48,9 @@
 
       <div class="wrapper"> <!-- wraps banner text -->
 
-        <h1>Experience coffee like never before</h1>
+        <h1 role="heading">Experience coffee like never before</h1> <!-- adds aria role to h1 for accessibility -->
 
-        <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let
-          every visit be a chapter in your coffee story.</p>
+        <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
 
         <button> Explore our menu </button>
 
@@ -59,7 +58,7 @@
 
     </div> <!-- CLOSES BANNER SECTION  -->
 
-    <div class="wrapper"> <!-- CONTAINS PHOTO GRID SECTION -->
+    <article class="wrapper" role="article" id="photo-grid"> <!-- CONTAINS PHOTO GRID SECTION, uses 'article' instead of 'div' and adds aria role and id for accessibility -->
 
       <h3>Welcome to my coffee house</h3>
       <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
@@ -72,59 +71,58 @@
         <img src="images/smiling-employee.jpeg" alt="smiling employee">
       </div> <!-- closes photos in photo grid wrapper -->
 
-    </div> <!-- CLOSES PHOTO GRID SECTION -->
+    </article> <!-- CLOSES PHOTO GRID SECTION -->
 
-    <div> <!-- CONTAINS PRODUCTS & SERVICES SECTION -->
+    <article id="products-services" role="article"> <!-- CONTAINS PRODUCTS & SERVICES SECTION, uses 'article' instead of 'div' and adds aria role and id for accessibility -->
       <h3>What we offer</h3>
       <h2>Why visit us?</h2>
 
-      <div> <!-- contains fair trade content -->
+      <aside id="fair-trade" role="complementary"> <!-- contains fair trade content, uses 'aside' instead of 'div' and adds aria role and id for accessibility -->
         <img src="images/fair-trade.svg" alt="fair trade icon">
         <h4>Fair Trade Coffee</h4>
         <p>We build direct relationships with the farmers and producers who help in the development of delicious,
           sustainable and organic coffee.</p>
-      </div> <!-- closes fair trade content -->
+      </aside> <!-- closes fair trade content -->
 
-      <div> <!-- contains local baked goods content -->
+      <aside id="local-baked-goods" role="complementary"> <!-- contains local baked goods content, uses 'aside' instead of 'div' and adds aria role and id for accessibility -->
         <img src="images/local-baked-goods.svg" alt="baked goods icon">
         <h4>Local Baked Goods</h4>
-        <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our
-          community.</p>
-      </div> <!-- closes local baked goods content -->
+        <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+      </aside> <!-- closes local baked goods content -->
 
-      <div> <!-- contains made with love content -->
+      <aside id="made-with-love" role="complementary"> <!-- contains made with love content, uses 'aside' instead of 'div' and adds aria role and id for accessibility -->
         <img src="images/made-with-love.svg" alt="made with love icon">
         <h4>Made with Love</h4>
         <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to
           start their day of right.</p>
-      </div> <!-- closes made with love content -->
+      </aside> <!-- closes made with love content -->
 
-    </div> <!-- CLOSES PRODUCTS & SERVICES SECTION -->
+    </article> <!-- CLOSES PRODUCTS & SERVICES SECTION -->
 
-    <div> <!-- CONTAINS EXPLORE SECTION -->
+    <article id="explore" role="article"> <!-- CONTAINS EXPLORE SECTION, uses 'article' instead of 'div' and adds aria role and id for accessibility -->
 
       <!-- adds full-width image outside the wrapper -->
       <img src="images/coffee-shop.jpeg" alt="coffee shop">
 
       <div class="wrapper"> <!-- wraps explore section text -->
 
-        <div> <!-- contains our menu content -->
+        <aside id="our-menu" role="complementary"> <!-- contains our menu content, uses 'aside' instead of 'div' and adds aria role and id for accessibility -->
           <h3>Our menu</h3>
           <p>Explore what we have to offer you</p>
           <button>Explore our menu</button>
-        </div> <!-- closes our menu content -->
+        </aside> <!-- closes our menu content -->
 
-        <div> <!-- contains locations content -->
+        <aside id="locations" role="complementary"> <!-- contains locations content, uses 'aside' instead of 'div' and adds aria role and id for accessibility -->
           <h3>Locations</h3>
           <p>Find your nearest coffee shop</p>
           <button>View locations</button>
-        </div> <!-- closes locations content -->
+        </aside> <!-- closes locations content -->
 
       </div> <!-- closes explore section text -->
 
-    </div> <!-- CLOSES EXPLORE SECTION -->
+    </article> <!-- CLOSES EXPLORE SECTION, uses 'article' instead of 'div' and adds aria role and id for accessibility -->
 
-    <div class="wrapper"> <!-- WRAPS ABOUT US SECTION -->
+    <article class="wrapper" role="article" id="about-us"> <!-- WRAPS ABOUT US SECTION -->
 
       <img src="images/about-us.jpeg" alt="two baristas making coffee">
 
@@ -141,28 +139,28 @@
         <button>Learn more/button>
       </div> <!-- closes about us text -->
 
-    </div> <!-- CLOSES ABOUT US SECTION -->
+    </article> <!-- CLOSES ABOUT US SECTION -->
 
-    <div class="wrapper"> <!-- TESTIMONIALS SECTION -->
+    <article class="wrapper" id="testimonials" role="article"> <!-- TESTIMONIALS SECTION, uses 'aticle' instead of 'div' and adds id and aria role for accessibility -->
       <h3>Welcome to my coffee house</h3>
       <h2>Experience a new way to taste coffee</h2>
 
       <div> <!-- wraps  testimonial section photos -->
 
-        <div> <!-- wraps Jane D testimonial -->
+        <aside id="jane-d" role="complementary"> <!-- wraps Jane D testimonial, uses 'aside' instad of 'div' and adds id and aria role for accessibility -->
           <img src="images/testimonial-1.jpeg" alt="Jane D. drinking coffee">
           <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."
           </p>
           <p>Jane D., Toronto</p>
-        </div> <!-- closes Jane D testimonial -->
+        </aside> <!-- closes Jane D testimonial -->
 
-        <div> <!-- wraps Scott S testimonial -->
+        <aside id="scott-s" role="complementary"> <!-- wraps Scott S testimonial, uses 'aside' instad of 'div' and adds id and aria role for accessibility -->
           <img src="images/testimonial-2.jpeg" alt="Scott S. smiling">
           <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
           <p>Scott S., Ottawa</p>
-        </div> <!-- closes Scott S testimonial -->
+        </aside> <!-- closes Scott S testimonial -->
 
-        <div> <!-- wraps Susie F testimonial -->
+        <div id="susie-f" role="complementary"> <!-- wraps Susie F testimonial, uses 'aside' instad of 'div' and adds id and aria role for accessibility -->
           <img src="images/testimonial-3.jpeg" alt="Susie F. smiling">
           <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
           <p>Susie F., Ottawa</p>
@@ -170,11 +168,11 @@
 
       </div> <!-- closes testimonial section photos -->
 
-    </div> <!-- CLOSESTESTIMONIALS SECTION -->
+    </article> <!-- CLOSES TESTIMONIALS SECTION -->
 
   </main> <!-- closes main content between header and footer -->
 
-  <footer class="footer"> <!-- footer with copyright information, used 'footer' instead of 'div' for accessibility, added class for skiplinks -->
+  <footer class="footer" role="contentinfo"> <!-- footer with copyright information, uses 'footer' instead of 'div' for accessibility, adds class for skiplinks and aria role for accessibility -->
     <p> &copy; My Coffee Company 2024</p>
   </footer>
 
