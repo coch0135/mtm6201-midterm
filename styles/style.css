@@ -50,6 +50,22 @@ table {
 
 /* MY STYLING BEGINS HERE */
 
+/* Styles Skiplinks */
+.skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
+    position: relative;
+}
+
+.skiplinks a {   /* uses position absolute to hide the skiplinks */
+    position: absolute;
+    top: -10em;
+}
+
+.skiplinks a:focus { /* adds a "focus" pseudoclass for skiplinks */
+color: #966f2c; /* color from the chart in assignment instructions, displays when user selects or tabs to skiplinks */
+top: 0; /* brings skiplinks back on the page when they are focused on */
+}
+
+
 /* GLOBAL STYLES */
 
 body {
@@ -58,6 +74,7 @@ body {
   font-style: normal;
   font-size: 18px; /* slightly larger than standard for accessibility */
   line-height: 1.5;
+  background-color: #f3f0e9; /* color from the chart in assignment instructions */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,35 +85,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.027rem;
-	/* plug in these values from the chart in the assignment instructions */
+	font-size: 2.027rem; /* font-size from the chart in assignment instructions */
+	color: #ffffff; /* color from the chart in assignment instructions */
+	
+
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 1.802rem; /* font-size from the chart in assignment instructions */
+	color: #000000;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 1.424rem; /* font-size from the chart in assignment instructions */
+	color: #d69e3d; /* color from the chart in assignment instructions */
 }
-
-h4 {
-	font-size: 1.5rem;
-}
-
-h5 {
-	font-size: 1.2rem;
-}
-
-h6 {
-	font-size: 1rem;
-}
-
 
 p {
+ line-height: 1.5rem; /* adds slightly more space between lines for accessibility */
+}
+
+/* Styles Links */
+a:link {
 	
 }
 
+a:hover {
+  color: #966f2c; /* color from the chart in assignment instructions */ 
+}
+
+a:active {
+
+}
+
+a:visited {
+
+}
 
 /* styles buttons */
 
@@ -121,7 +145,7 @@ button:active {
 }
 
 header {
-	background-color: black;
+	background-color: #000000; /* color from the chart in assignment instructions */
 	display: grid;
 }
 
@@ -130,17 +154,49 @@ main {
 }
 
 footer {
-	background-color: black;
+	background-color: #000000; /* color from the chart in assignment instructions */
 }
 
-/* MEDIA QUERIES */
+/************************ MEDIA QUERIES ************************/
 
 /* STYLES FOR TABLET */
 @media screen and (min-width: 768px) {
+	
+	h1 {
+		font-size: 2.986rem;
+	}
+
+	h2 {
+		font-size: 2.488rem;
+	}
+
+	h3 {
+		font-size: 1.728rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
 
 }
 
 /* STYLES FOR DESKTOP */
 @media screen and (min-width: 1100px) {
+
+	h1 {
+		font-size: 3.815rem;
+	}
+
+	h2 {
+		font-size: 3.052rem;
+	}
+
+	h3 {
+		font-size: 1.953rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
 
 }

@@ -17,11 +17,19 @@
 
 <body>
 
-  <header class="wrapper"> <!-- wraps header with logo and nav menu -->
+  <nav class="skiplinks"> <!-- adds skiplinks -->
+        <ul>
+            <li><a href="#main-nav">Skip to navigation</a></li>  <!-- adds named anchor linking to id -->
+            <li><a href="#main-content">Skip to main content</a></li> <!-- adds named anchor linking to id -->
+            <li><a href="#footer">Skip to footer</a></li> <!-- adds named anchor linking to id -->
+        </ul>
+    </nav>
+
+  <header class="wrapper"> <!-- wraps header with logo and nav menu, used 'header' instead of 'div' for accessibility -->
 
     <img src="images/my-coffee-shop-logo.svg" alt="logo">
 
-    <nav> <!-- navigation menu -->
+    <nav class="main-nav"> <!-- navigation menu with class for skiplinks -->
       <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Menu</a></li>
@@ -31,7 +39,7 @@
 
   </header>
 
-  <main> <!-- contains main content between header and footer -->
+  <main class="main-content"> <!-- contains main content between header and footer, used 'main' instead of 'div' for accessibility, added class for skiplinks -->
 
     <div class="banner"> <!-- CONTAINS BANNER SECTION -->
 
@@ -166,7 +174,7 @@
 
   </main> <!-- closes main content between header and footer -->
 
-  <footer> <!-- footer with copyright information -->
+  <footer class="footer"> <!-- footer with copyright information, used 'footer' instead of 'div' for accessibility, added class for skiplinks -->
     <p> &copy; My Coffee Company 2024</p>
   </footer>
 
