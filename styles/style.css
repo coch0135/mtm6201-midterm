@@ -105,6 +105,11 @@ p {
  line-height: 1.5rem; /* adds slightly more space between lines for accessibility */
 }
 
+/* styles all images */
+img {
+	width: 100%;
+}
+
 /* Styles Links */
 a:link {
 	
@@ -142,11 +147,17 @@ button:active {
 
 .wrapper {
 	max-width: 1200px;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 header {
 	background-color: #000000; /* color from the chart in assignment instructions */
 	display: grid;
+}
+
+.banner img {
+	
 }
 
 main {
