@@ -50,14 +50,15 @@ table {
 
 /* MY STYLING BEGINS HERE */
 
-/* Styles Skiplinks */
-.skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
-    position: relative;
+/* no box-sizing rules found in CSS reset, SPA added this one to use screen size as border size for content */
+html {
+ box-sizing: border-box;
 }
 
-.skiplinks a {   /* uses position absolute to hide the skiplinks */
-    position: absolute;
-    top: -10em;
+/* Styles Skiplinks */
+.skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
+    position: absolute; /* position absolute applied to ul */
+	top: -10em; /* moves skiplinks above/outside of the screen */
 }
 
 .skiplinks a:focus { /* adds a "focus" pseudoclass for skiplinks */
@@ -156,8 +157,51 @@ header {
 	display: grid;
 }
 
-.banner img {
+/* styles nav bar */
+nav {
+	margin-bottom: 1.5rem; /* creates spaces between sections */
+}
+
+nav ul {
+	display: flex; /* displays content side by side in the center */
+	justify-content: center;
 	
+}
+
+/* creates space between nav items */
+nav ul li {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+/* styles anchor tags */
+nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* sets the banner container's position to relative */
+.banner {
+	position: relative;
+}
+
+/* styles overlay background to darken the banner image */
+.banner-text {
+	position: absolute;
+	/* banner's height is the container's height to overlay banner text */
+	top: 0; /* sets reference point for banner text position as top of container */
+	width: 100%;
+	height: 100%;
+	background-color: #00000069; /* adjust transparency to style */
+}
+
+.banner img {
+	margin-bottom: 1.5rem;
+}
+
+header img {
+	margin-top: 2rem;
 }
 
 main {

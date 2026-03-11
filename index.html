@@ -50,13 +50,16 @@
       <!-- adds banner image outside the wrapper -->
       <img src="images/hero-background.jpg" alt="barista making espresso">
 
-      <div class="wrapper"> <!-- wraps banner text to position absolutely over the image (there are other ways to do this) -->
+      <div class="banner-text"> <!-- removes wrapper class name from banner text container and wraps banner text to position absolutely over the image (there are other ways to do this) -->
+          <div class="wrapper">
+            <h1 role="heading">Experience coffee like never before</h1> <!-- adds aria role to h1 for accessibility -->
+    
+            <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+    
+            <button> Explore our menu </button>
 
-        <h1 role="heading">Experience coffee like never before</h1> <!-- adds aria role to h1 for accessibility -->
-
-        <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-
-        <button> Explore our menu </button>
+          </div> <!-- closes banner text wrapper -->
+        
 
       </div> <!-- closes banner text wrapper  -->
 
