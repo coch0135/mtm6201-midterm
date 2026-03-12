@@ -163,9 +163,8 @@ nav {
 }
 
 nav ul {
-	display: flex; /* displays content side by side in the center */
-	justify-content: center;
-	
+	display: flex; /* displays content side by side */
+	justify-content: center; /* centers content */
 }
 
 /* creates space between nav items */
@@ -210,6 +209,10 @@ main {
 
 footer {
 	background-color: #000000; /* color from the chart in assignment instructions */
+	color: #ffffff; /* color from the chart in assignment instructions */
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2rem;
 }
 
 /************************ MEDIA QUERIES ************************/
