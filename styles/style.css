@@ -229,11 +229,22 @@ main {
 	padding-bottom: 2rem; /* adds space between elements */
 }
 
-/***************************************** STYLES BANNER SECTION *****************************************/
-/********************************************* UNRESOLVED: *********************************************/ 
+/***************************************** STYLES WELCOME SECTION *****************************************/
 
-#photo-grid {
-	
+#welcome { /* targets unique section id */
+	padding: 5%; /* adds padding */
+}
+
+#photo-grid { /* targets unique section id */
+	display: grid; /* arranges photos as a grid */
+	grid-template-rows: auto auto auto auto; /* grid has 4 rows */
+	grid-template-columns: auto auto; /* grid has 2 columns */
+	gap: 1em; /* adds space between images */
+}
+
+#foam-art { /* targets unique img id */
+	grid-column: span 2; /* img takes 2 columns */
+	grid-row: span 2; /* img takes 2 rows */
 }
 
 /************************************** STYLES PRODUCTS-SERVICES SECTION **************************************/
