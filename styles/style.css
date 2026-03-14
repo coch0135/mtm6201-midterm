@@ -1,4 +1,5 @@
-/* CSS reset */
+
+/***************************************** CSS reset *****************************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,14 +49,14 @@ table {
 	border-spacing: 0;
 }
 
-/* MY STYLING BEGINS HERE */
+/***************************************** MY STYLING BEGINS HERE *****************************************/
 
 /* no box-sizing rules found in CSS reset, SPA added this one to use screen size as border size for content */
 html {
  box-sizing: border-box;
 }
 
-/* Styles Skiplinks */
+/***************************************** Styles Skiplinks *****************************************/
 .skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
     position: absolute; /* position absolute applied to ul */
 	top: -10em; /* moves skiplinks above/outside of the screen */
@@ -67,7 +68,7 @@ top: 0; /* brings skiplinks back on the page when they are focused on */
 }
 
 
-/* GLOBAL STYLES */
+/***************************************** GLOBAL STYLES *****************************************/
 
 body {
   font-family: "Karla", sans-serif;
@@ -88,8 +89,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 2.027rem; /* font-size from the chart in assignment instructions */
 	color: #ffffff; /* color from the chart in assignment instructions */
-	
-
 }
 
 h2 {
@@ -106,12 +105,12 @@ p {
  line-height: 1.5rem; /* adds slightly more space between lines for accessibility */
 }
 
-/* styles all images */
+/* GLOBAL IMAGE STYLING */
 img {
 	width: 100%;
 }
 
-/* Styles Links */
+/* GLOBAL LINK STYLING */
 a:link {
 	
 }
@@ -128,7 +127,7 @@ a:visited {
 
 }
 
-/* styles buttons */
+/* GLOBAL BUTTON STYLING */
 
 button {
 
@@ -142,11 +141,12 @@ button:active {
 
 }
 
+/***************************************** STYLES BY SECTION *****************************************/
 
+/******************************************** STYLES HEADER *********************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
 
-/* STYLES BY SECTION */
-
-.wrapper {
+.header {
 	max-width: 1200px;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -155,6 +155,11 @@ button:active {
 header {
 	background-color: #000000; /* color from the chart in assignment instructions */
 	display: grid;
+}
+
+/* styles logo */
+header img {
+	margin-top: 2rem;
 }
 
 /* styles nav bar */
@@ -180,44 +185,104 @@ nav ul li a {
 	font-weight: bold;
 }
 
-/* sets the banner container's position to relative */
-.banner {
-	position: relative;
-}
-
-/* styles overlay background to darken the banner image */
-.banner-text {
-	position: absolute;
-	/* banner's height is the container's height to overlay banner text */
-	top: 0; /* sets reference point for banner text position as top of container */
-	width: 100%;
-	height: 100%;
-	background-color: #00000069; /* adjust transparency to style */
-}
-
-.banner img {
-	margin-bottom: 1.5rem;
-}
-
-header img {
-	margin-top: 2rem;
-}
+/* STYLES ALL MAIN CONTENT */
 
 main {
 
 }
 
+/***************************************** STYLES BANNER SECTION *****************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
+/* Why does the overlay extend below the bottom of the image? */
+
+.banner {
+	position: relative; /* sets the banner container's position to relative */
+}
+
+.banner img { 
+	margin-bottom: 1rem; /* adds space beneath banner image */
+}
+
+.banner-overlay { /* styles overlay background to darken the banner image */
+	position: absolute; /* positions overlay background over the image */
+
+	/* banner's height is the container's height to overlay banner text */
+	top: 0; /* sets reference point for banner text position as top of container */
+	width: 100%; /* covers full width of image */
+	height: 100%; /* covers full height of image */
+	color: #ffffff; /* font color from assignment instructions */
+	background-color: #0000006b; /* adjust transparency to style */
+}
+
+.banner-text { /* styles text within banner overlay */
+	position: absolute;
+	display: flex; /* allows elements to be arranged */
+	flex-direction: column; /* stacks elements vertically */
+	align-items: center; /* centers content */
+	text-align: center; /* centers text */
+	padding-top: 1rem;  /* adds space between elements */
+	padding-bottom: 1rem; /* adds space between elements */
+}
+
+.banner-text p, h1, button  {
+	display: flex;
+	padding-top: 2rem;/* adds space between elements */
+	padding-bottom: 2rem; /* adds space between elements */
+}
+
+/***************************************** STYLES BANNER SECTION *****************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
+
+#photo-grid {
+	
+}
+
+/***************************************** STYLES PRODUCTS-SERVICES SECTION *****************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
+
+#products-services {
+	
+}
+
+
+/***************************************** STYLES EXPLORE SECTION *****************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
+
+#explore {
+	
+}
+
+/***************************************** STYLES ABOUT-US SECTION *****************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
+
+#about-us {
+	
+}
+
+/***************************************** STYLES TESTIMONIALS SECTION *****************************************/
+/********************************************* UNRESOLVED: *********************************************/ 
+
+#testimonials {
+	
+}
+
+
+/******************************************** STYLES FOOTER *********************************************/
+/********************************************* UNRESOLVED: *********************************************/
+/* Is there a dividing line at the top border? */
+
 footer {
 	background-color: #000000; /* color from the chart in assignment instructions */
 	color: #ffffff; /* color from the chart in assignment instructions */
-	display: flex;
-	justify-content: center;
-	padding-bottom: 2rem;
+	display: flex; /* allows justify content */
+	justify-content: center; /* centers content */
+	padding-bottom: 2rem; /* adds extra padding to bottom */
 }
 
-/************************ MEDIA QUERIES ************************/
+/******************************************** MEDIA QUERIES *********************************************/
 
-/* STYLES FOR TABLET */
+/******************************************** STYLES FOR TABLET *********************************************/
+/********************************************* UNRESOLVED: *********************************************/
 @media screen and (min-width: 768px) {
 	
 	h1 {
@@ -238,7 +303,9 @@ footer {
 
 }
 
-/* STYLES FOR DESKTOP */
+/******************************************** STYLES FOR DESKTOP *********************************************/
+/********************************************* UNRESOLVED: *********************************************/
+
 @media screen and (min-width: 1100px) {
 
 	h1 {

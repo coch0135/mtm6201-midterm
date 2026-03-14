@@ -29,9 +29,9 @@
         </ul>
     </nav>
 
-  <header class="wrapper" role="banner"> <!-- wraps header with logo and nav menu, uses 'header' instead of 'div' and adds aria role for accessibility -->
+  <header class="header" role="banner"> <!-- wraps header with logo and nav menu, uses 'header' instead of 'div' and adds aria role for accessibility -->
 
-    <img src="images/my-coffee-shop-logo.svg" alt="logo">
+    <img src="images/my-coffee-shop-logo.svg" alt="logo"> <!-- adds logo to header -->
 
     <nav class="main-nav" role="navigation"> <!-- navigation menu with class for skiplinks and aria role -->
       <ul>
@@ -47,21 +47,21 @@
 
     <div class="banner"> <!-- CONTAINS BANNER SECTION -->
 
-      <!-- adds banner image outside the text wrapper -->
-      <img src="images/hero-background.jpg" alt="barista making espresso">
+      <img src="images/hero-background.jpg" alt="barista making espresso"> <!-- adds banner image outside the text wrapper -->
 
-      <div class="banner-text"> <!-- wraps banner content -->
-          <div class="wrapper"> <!-- wraps banner text to position absolutely over the image -->
-            <h1 role="heading">Experience coffee like never before</h1> <!-- adds aria role to h1 for accessibility -->
+      <div class="banner-overlay"> <!-- wraps dark translucent shape over banner image -->
+
+          <div class="banner-text"> <!-- wraps banner text to position over the image -->
+
+            <h1 role="heading">EXPERIENCE COFFEE LIKE NEVER BEFORE</h1> <!-- adds aria role to h1 for accessibility -->
     
             <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
     
             <button> Explore our menu </button>
 
-          </div> <!-- closes banner wrapper -->
+          </div> <!-- closes banner text wrapper -->
         
-
-      </div> <!-- closes banner text wrapper  -->
+      </div> <!-- closes banner overlay wrapper  -->
 
     </div> <!-- CLOSES BANNER SECTION  -->
 
