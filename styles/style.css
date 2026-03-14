@@ -192,7 +192,8 @@ main {
 
 /***************************************** STYLES BANNER SECTION *****************************************/
 /********************************************* UNRESOLVED: *********************************************/ 
-/* Why does the overlay extend below the bottom of the image? */
+/* Overlay extends below the bottom of the image */
+/* "justify-content:center" does not work for .banner-text */
 
 .banner {
 	position: relative; /* sets the banner container's position to relative */
@@ -204,29 +205,33 @@ main {
 
 .banner-overlay { /* styles overlay background to darken the banner image */
 	position: absolute; /* positions overlay background over the image */
+	background-color: #0000006b; /* adjust transparency to style */
+	color: #ffffff; /* font color from assignment instructions */
 
 	/* banner's height is the container's height to overlay banner text */
 	top: 0; /* sets reference point for banner text position as top of container */
 	width: 100%; /* covers full width of image */
 	height: 100%; /* covers full height of image */
-	color: #ffffff; /* font color from assignment instructions */
-	background-color: #0000006b; /* adjust transparency to style */
 }
 
 .banner-text { /* styles text within banner overlay */
 	position: absolute;
 	display: flex; /* allows elements to be arranged */
 	flex-direction: column; /* stacks elements vertically */
-	align-items: center; /* centers content */
-	text-align: center; /* centers text */
+	text-align: center; /* centers text alignment */
+	align-items: center; /* centers the button only? */
+	
 	padding-top: 1rem;  /* adds space between elements */
 	padding-bottom: 1rem; /* adds space between elements */
 }
 
-.banner-text p, h1, button  {
-	display: flex;
-	padding-top: 2rem;/* adds space between elements */
-	padding-bottom: 2rem; /* adds space between elements */
+.banner-text h1 {
+	margin: 0;
+}
+
+.banner-text p {
+	padding-top: 1rem;/* adds space between elements */
+	padding-bottom: 1rem; /* adds space between elements */
 }
 
 /***************************************** STYLES WELCOME SECTION *****************************************/
