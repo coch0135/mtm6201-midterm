@@ -144,7 +144,6 @@ button:active {
 /***************************************** STYLES BY SECTION *****************************************/
 
 /******************************************** STYLES HEADER *********************************************/
-/********************************************* UNRESOLVED: *********************************************/ 
 
 .header {
 	max-width: 1200px;
@@ -269,7 +268,7 @@ main {
 
 /******************************************** STYLES FOOTER *********************************************/
 /********************************************* UNRESOLVED: *********************************************/
-/* Is there a dividing line at the top border? */
+/* Is there a dividing line at the top of the footer? */
 
 footer {
 	background-color: #000000; /* color from the chart in assignment instructions */
