@@ -189,9 +189,6 @@ main {
 }
 
 /***************************************** STYLES BANNER SECTION *****************************************/
-/********************************************* UNRESOLVED: *********************************************/ 
-/* Overlay extends below the bottom of the image */
-/* "justify-content:center" does not work for .banner-text */
 
 .banner {
 	position: relative; /* sets the banner container's position to relative */
@@ -205,6 +202,9 @@ main {
 	position: absolute; /* positions overlay background over the image */
 	background-color: #0000006b; /* adjust transparency to style */
 	color: #ffffff; /* font color from assignment instructions */
+
+/********************************************* UNRESOLVED: *********************************************/ 
+/* Overlay extends below the bottom of the image */
 
 	/* banner's height is the container's height to overlay banner text */
 	top: 0; /* sets reference point for banner text position as top of container */
@@ -251,7 +251,6 @@ main {
 }
 
 /************************************** STYLES PRODUCTS-SERVICES SECTION **************************************/
-/********************************************* UNRESOLVED: *********************************************/ 
 
 #products-services { /* targets unique section id */
 	padding: 10%; /* adds padding */
@@ -264,28 +263,9 @@ main {
 	width: 50%;  /* reduces width for proportionality with text */
 }
 
-#products-servics h3 {
-	background-color: aquamarine;
-}
-
-#fair-trade { /* targets unique section id */
-	margin-top: 10%; /* adds space between articles */
-	margin-bottom: 15%; /* adds space between articles */
-}
-
-#local-baked-goods { /* targets unique section id */
-	margin-top: 10%; /* adds space between articles */
-	margin-bottom: 10%; /* adds space between articles */
-}
-
-#local-baked-goods { /* targets unique section id */
-	margin-top: 10%; /* adds space between articles */
-	margin-bottom: 10%; /* adds space between articles */
-}
-
-#made-with-love { /* targets unique section id */
-	margin-top: 10%; /* adds space between articles */
-	margin-bottom: 10% /* adds space between articles */
+#products-services aside {
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 
