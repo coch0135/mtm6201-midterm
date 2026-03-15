@@ -82,8 +82,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "lato", sans-serif;
 	font-weight: bold;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
 }
 
 h1 {
@@ -226,7 +224,7 @@ main {
 }
 
 .banner-text h1 {
-	margin: 0;
+	margin: 0; /* adds margin */
 }
 
 .banner-text p {
@@ -255,8 +253,39 @@ main {
 /************************************** STYLES PRODUCTS-SERVICES SECTION **************************************/
 /********************************************* UNRESOLVED: *********************************************/ 
 
-#products-services {
-	
+#products-services { /* targets unique section id */
+	padding: 10%; /* adds padding */
+	display: flex; /* allows elements to be arranged */
+	flex-direction: column; /* stacks items vertically */
+	text-align: center; /* centers text */
+}
+
+#products-services img { /* targets all images in this section */
+	width: 50%;  /* reduces width for proportionality with text */
+}
+
+#products-servics h3 {
+	background-color: aquamarine;
+}
+
+#fair-trade { /* targets unique section id */
+	margin-top: 10%; /* adds space between articles */
+	margin-bottom: 15%; /* adds space between articles */
+}
+
+#local-baked-goods { /* targets unique section id */
+	margin-top: 10%; /* adds space between articles */
+	margin-bottom: 10%; /* adds space between articles */
+}
+
+#local-baked-goods { /* targets unique section id */
+	margin-top: 10%; /* adds space between articles */
+	margin-bottom: 10%; /* adds space between articles */
+}
+
+#made-with-love { /* targets unique section id */
+	margin-top: 10%; /* adds space between articles */
+	margin-bottom: 10% /* adds space between articles */
 }
 
 
