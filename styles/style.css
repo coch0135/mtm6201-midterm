@@ -109,35 +109,49 @@ img {
 }
 
 /* GLOBAL LINK STYLING */
-a:link {
-	
+a:link { /* when the user is not interacting with the link */
+	color: #ffffff;
 }
 
-a:hover {
-  color: #966f2c; /* color from the chart in assignment instructions */ 
+a:hover { /* when the user hovers over the link */
+  	color: #d69e3d; /* color from the chart in assignment instructions */ 
 }
 
-a:active {
-
+a:active { /* when the user clicks the link */
+	color: #966f2c; /* color from the chart in assignment instructions */ 
 }
 
-a:visited {
-
+a:visited { /* when the user sees a link they have already clicked */
+	color: #ffffff; /* color from the chart in assignment instructions */
 }
 
-/* GLOBAL BUTTON STYLING */
+/* GLOBAL BUTTON STYLING (EXPLORE OUR MENU BUTTONS) */
 
-button {
-
+button { /* when the user is not interacting with the button */
+	background-color:#ffffff; /* colors from the chart in assignment instructions */
+	border: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5%; /* adds spacing in and around buttons */
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
-button:hover {
-
+button:hover { /* when the user hovers over the button */
+	background-color:#000000; /* colors from the chart in assignment instructions */
+	color: #ffffff; 
+	border: #ffffff;
+	font-weight: bold;
 }
 
-button:active {
-
+button:active { /* when the user clicks the button */
+	background-color:#000000; /* colors from the chart in assignment instructions */
+	color: #d69e3d; 
+	border: #ffffff;
+	font-weight: bold;
 }
+
+
 
 /***************************************** STYLES BY SECTION *****************************************/
 
@@ -233,9 +247,6 @@ main {
 	padding-bottom: 1rem; /* adds space between elements */
 }
 
-/********************************************* UNRESOLVED: *********************************************/ 
-/* Button styling */
-
 
 /***************************************** STYLES WELCOME SECTION *****************************************/
 
@@ -280,6 +291,25 @@ main {
 	
 }
 
+/* styles view-locations button (our menu button is global styling) */
+
+#view-locations { /* targets unique button id when the user is not interacting with it" */
+	background-color: transparent; /* colors from the chart in assignment instructions */
+	color: #ffffff;
+	border: #ffffff;
+}
+
+#view-locations:hover { /* targets unique button id when the user is hovering over it" */
+	background-color: #000000; /* colors from the chart in assignment instructions */
+	color: #ffffff;
+	border: #ffffff;
+}
+
+#view-locations:active { /* targets unique button id when the user clicks it" */
+	background-color: #000000; /* colors from the chart in assignment instructions */
+	color: #d69e3d;
+	border: #d69e3d;
+}
 
 /***************************************** STYLES ABOUT-US SECTION *****************************************/
 
@@ -289,8 +319,28 @@ main {
 	padding: 5%; /* adds padding */
 }
 
-/********************************************* UNRESOLVED: *********************************************/ 
-/* Button styling */
+#about-us h2 { /* adds space between elements */
+	padding-bottom: 2%;
+}
+/* styles learn-more button */
+
+#learn-more { /* targets unique button id when the user is not interacting with it" */
+	background-color:#000000; /* colors from the chart in assignment instructions */
+	color: #ffffff;
+	border: #ffffff;
+}
+
+#learn-more:hover { /* targets unique button id when the user is hovering over it" */
+	background-color: #966f2c; /* colors from the chart in assignment instructions */
+	color: #000000;
+	border: #000000;
+}
+
+#learn-more:active { /* targets unique button id when the user clicks it" */
+	background-color: #000000; /* colors from the chart in assignment instructions */
+	color: #d69e3d;
+	border: #d69e3d;
+}
 
 
 /***************************************** STYLES TESTIMONIALS SECTION *****************************************/
