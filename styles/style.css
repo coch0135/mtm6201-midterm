@@ -207,18 +207,13 @@ nav ul li a {
 	position: relative; /* sets the banner container's position to relative */
 }
 
-.banner img { 
-	margin-bottom: 1rem; /* adds space beneath banner image */
-}
-
 .banner-overlay { /* styles overlay background to darken the banner image */
 	position: absolute; /* positions overlay background over the image */
 	background-color: #0000006b; /* adjust transparency to style */
 	color: #ffffff; /* font color from assignment instructions */
+	display: flex; /* allows elements to be arranged */
+	align-items: center; /* aligns banner text in center of the image container */
 
-/********************************************* UNRESOLVED: TARO *********************************************/ 
-/* Overlay extends below the bottom of the image */
-/* Content not centered vertically within container */
 
 	/* banner's height is the container's height to overlay banner text */
 	top: 0%; /* sets reference point for banner text position as top of container */
@@ -286,19 +281,21 @@ nav ul li a {
 /***************************************** STYLES EXPLORE SECTION *****************************************/
 
 #explore { /* targets unique section id */
-	position: relative; /* positions image behind text */
   	text-align: center; /* center aligns text */
+	background-image: url("../images/coffee-shop.jpeg");
+	background-size: cover;
 }
 
 #explore-text { /* targets unique wrapper id */
-	position: absolute; /* positions text over image */
 	background-color: #0000006b; /* adjust transparency to style */
+	padding-top: 3%;
+	padding-bottom: 3%;
 
 /********************************************* UNRESOLVED: TARO *********************************************/ 
 /* banner text is too large compared to background image */
 
 	/* banner's height is the container's height to overlay banner text */
-	top: 0%; /* sets reference point for banner text position as top of container */
+
 	width: 100%; /* covers full width of image */
 	height: 100%; /* covers full height of image */
 }
