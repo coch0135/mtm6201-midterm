@@ -75,13 +75,13 @@ body {
   font-weight: 100;
   font-style: normal;
   font-size: 18px; /* slightly larger than standard for accessibility */
-  line-height: 1.5;
   background-color: #f3f0e9; /* color from the chart in assignment instructions */
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "lato", sans-serif;
 	font-weight: bold;
+	/* removed padding/margin based on assignment screenshots */
 }
 
 h1 {
@@ -196,12 +196,6 @@ nav ul li a {
 	font-weight: bold;
 }
 
-/* STYLES ALL MAIN CONTENT */
-
-main {
-
-}
-
 /***************************************** STYLES BANNER SECTION *****************************************/
 
 .banner {
@@ -217,12 +211,12 @@ main {
 	background-color: #0000006b; /* adjust transparency to style */
 	color: #ffffff; /* font color from assignment instructions */
 
-/********************************************* UNRESOLVED: *********************************************/ 
+/********************************************* UNRESOLVED: TARO *********************************************/ 
 /* Overlay extends below the bottom of the image */
 /* Content not centered vertically within container */
 
 	/* banner's height is the container's height to overlay banner text */
-	top: 0; /* sets reference point for banner text position as top of container */
+	top: 0%; /* sets reference point for banner text position as top of container */
 	width: 100%; /* covers full width of image */
 	height: 100%; /* covers full height of image */
 }
@@ -345,7 +339,7 @@ main {
 
 /***************************************** STYLES TESTIMONIALS SECTION *****************************************/
 
-/********************************************* UNRESOLVED: *********************************************/ 
+/********************************************* UNRESOLVED: TARO *********************************************/ 
 /* Testimonials not positioned over images */
 
 #testimonials { /* targets unique section id */
@@ -368,7 +362,7 @@ main {
 
 /******************************************** STYLES FOOTER *********************************************/
 
-/********************************************* UNRESOLVED: *********************************************/
+/********************************************* UNRESOLVED: TARO *********************************************/
 /* Is there a dividing line at the top of the footer? */
 
 footer {
