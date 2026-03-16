@@ -428,13 +428,21 @@ footer {
 		grid-template-columns: auto auto auto auto; /* grid has 4 columns */
 	}
 
-	/************************************** STYLES PRODUCTS-SERVICES SECTION FOR TABLET **************************************/
+/************************************** STYLES PRODUCTS-SERVICES SECTION FOR TABLET **************************************/
 
 	#products-services { /* targets unique section id */
 		
 		
 	}
 
+/************************************** STYLES ABOUT-US SECTION FOR TABLET **************************************/
+
+	#about-us { /* targets unique section id */
+		display: grid; /* displays text beside image */
+		grid-template-rows: auto; /* grid has one row */
+		grid-template-columns: auto auto; /* grid has 2 columns */
+		gap: 5%; /* adds space between columns */
+	}
 
 
 } /* closes tablet media query */
