@@ -378,6 +378,31 @@ nav ul li a {
 	margin-bottom: 10%;
 }
 
+.testimonial {
+	position: relative;
+	width: 100%;
+}
+
+.testimonial-text {
+	position: absolute; /* positions overlay background over the image */
+	background-color: #0000006b; /* adjust transparency to style */
+	color: #ffffff; /* font color from assignment instructions */
+	display: flex; /* allows elements to be arranged */
+	align-items: end; /* aligns banner text at end of each image container */
+	flex-wrap: wrap;
+
+
+	/* banner's height is the container's height to overlay banner text */
+	top: 0%; /* sets reference point for banner text position as top of container */
+	width: 100%; /* covers full width of image */
+	height: 100%; /* covers full height of image */
+}
+
+.testimonial-text p {
+	flex-basis: 100%
+}
+
+
 /******************************************** STYLES FOOTER *********************************************/
 
 /********************************************* UNRESOLVED: TARO *********************************************/
