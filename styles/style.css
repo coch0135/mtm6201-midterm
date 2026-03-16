@@ -366,6 +366,7 @@ nav ul li a {
 
 #testimonials { /* targets unique section id */
 	background-color: #000000; /* color from the chart in assignment instructions */
+	color: #ffffff; /* color from the chart in assignment instructions */
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 20%;
@@ -376,11 +377,6 @@ nav ul li a {
 	color: #ffffff; /* color from the chart in assignment instructions */
 	margin-bottom: 10%;
 }
-
-#testimonials aside > p { /* targets the paragraph text in each testimonial */
-	color: #ffffff; /* color from the chart in assignment instructions */
-} 
-
 
 /******************************************** STYLES FOOTER *********************************************/
 
