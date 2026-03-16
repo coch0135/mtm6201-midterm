@@ -81,8 +81,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "lato", sans-serif;
 	font-weight: bold;
-	margin-top: 3%;
-	margin-bottom: 3%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 h1 {
@@ -268,7 +268,7 @@ nav ul li a {
 /************************************** STYLES PRODUCTS-SERVICES SECTION **************************************/
 
 #products-services { /* targets unique section id */
-	padding: 10%; /* adds padding */
+	padding: 5%; /* adds padding */
 	display: flex; /* allows elements to be arranged */
 	flex-direction: column; /* stacks items vertically */
 	text-align: center; /* centers text */
@@ -430,8 +430,8 @@ footer {
 
 /************************************** STYLES PRODUCTS-SERVICES SECTION FOR TABLET **************************************/
 
-	#products-services { /* targets unique section id */
-		
+	#products-services {
+
 	}
 
 /***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
@@ -485,11 +485,17 @@ footer {
 		font-size: 1rem; /* value from assignment instructions */
 	}
 
-}
-
 /************************************** STYLES PRODUCTS-SERVICES SECTION FOR DESKTOP **************************************/
 
-	#products-services { /* targets unique section id */
-		
+	#products-services-asides { /* targets unique id */
+		display: flex; /* allows elements to be arranged */
+		flex-direction: row; /* arranges elements in a row */
 	}
 
+	#products-services aside { /* targets unique id */
+		padding-left: 3rem; /* adds space between items */
+		padding-right: 3rem; /* adds space between items */
+	}
+	
+
+}
