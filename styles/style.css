@@ -428,12 +428,20 @@ footer {
 		grid-template-columns: auto auto auto auto; /* grid has 4 columns */
 	}
 
-/************************************** STYLES PRODUCTS-SERVICES SECTION FOR TABLET **************************************/
+/************************************** STYLES PRODUCTS-SERVICES SECTION FOR TABLET **************************************/	
 
-	#products-services {
-
+	#fairtrade-localbakedgoods { /* targets unique section id */
+		display: flex; /* displays first two asides beside each other */
 	}
 
+
+	#made-with-love { /* targets unique section id */
+		width: 50%; /* resizes third aside */
+		
+		justify-content: center; /* centers third aside */
+		
+	}
+}	
 /***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
 	#explore { /* targets unique section id */
 		
