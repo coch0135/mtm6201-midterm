@@ -291,9 +291,6 @@ nav ul li a {
 	padding-top: 3%;
 	padding-bottom: 3%;
 
-/********************************************* UNRESOLVED: TARO *********************************************/ 
-/* banner text is too large compared to background image */
-
 	/* banner's height is the container's height to overlay banner text */
 
 	width: 100%; /* covers full width of image */
@@ -306,7 +303,7 @@ nav ul li a {
 }
 
 /* styles view-locations button (our menu button is global styling) */
-/********************************************* UNRESOLVED: TARO *********************************************/ 
+/********************************************* UNRESOLVED *********************************************/ 
 /* view-locations button border is not displaying */
 
 #view-locations { /* targets unique button id when the user is not interacting with it" */
@@ -405,7 +402,7 @@ nav ul li a {
 
 /******************************************** STYLES FOOTER *********************************************/
 
-/********************************************* UNRESOLVED: TARO *********************************************/
+/********************************************* UNRESOLVED *********************************************/
 /* Is there a dividing line at the top of the footer? */
 
 footer {
