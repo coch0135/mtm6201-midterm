@@ -274,15 +274,14 @@ nav ul li a {
 	text-align: center; /* centers text */
 }
 
-#products-services img { /* targets all images in this section */
-	width: 50%;  /* reduces width for proportionality with text */
-}
-
 #products-services aside { /* targets unique section id */
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
 
+#products-services img {
+	width: 50%;
+}
 
 /***************************************** STYLES EXPLORE SECTION *****************************************/
 
@@ -431,15 +430,7 @@ footer {
 /************************************** STYLES PRODUCTS-SERVICES SECTION FOR TABLET **************************************/	
 
 	#fairtrade-localbakedgoods { /* targets unique section id */
-		display: flex; /* displays first two asides beside each other */
-	}
-
-
-	#made-with-love { /* targets unique section id */
-		width: 50%; /* resizes third aside */
-		
-		justify-content: center; /* centers third aside */
-		
+		display: flex; /* displays r */
 	}
 }	
 /***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
