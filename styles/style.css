@@ -132,9 +132,13 @@ button { /* when the user is not interacting with the button */
 	border: none;
 	font-weight: bold;
 	text-align: center;
-	padding: 5%; /* adds spacing in and around buttons */
-	margin-top: 5%;
-	margin-bottom: 5%;
+	/* adds spacing in and around buttons */
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 button:hover { /* when the user hovers over the button */
@@ -282,10 +286,28 @@ nav ul li a {
 /***************************************** STYLES EXPLORE SECTION *****************************************/
 
 #explore { /* targets unique section id */
-	
+	position: relative; /* positions image behind text */
+  	text-align: center; /* center aligns text */
+}
+
+#explore-text { /* targets unique wrapper id */
+	position: absolute; /* positions text over image */
+	background-color: #0000006b; /* adjust transparency to style */
+
+	/* banner's height is the container's height to overlay banner text */
+	top: 0%; /* sets reference point for banner text position as top of container */
+	width: 100%; /* covers full width of image */
+	height: 100%; /* covers full height of image */
+}
+
+#explore-text aside {
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
 /* styles view-locations button (our menu button is global styling) */
+/********************************************* UNRESOLVED: TARO *********************************************/ 
+/* view-locations button border is not displaying */
 
 #view-locations { /* targets unique button id when the user is not interacting with it" */
 	background-color: transparent; /* colors from the chart in assignment instructions */
