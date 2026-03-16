@@ -496,6 +496,5 @@ footer {
 		padding-left: 3rem; /* adds space between items */
 		padding-right: 3rem; /* adds space between items */
 	}
-	
 
-}
+} /* closes desktop media query */
