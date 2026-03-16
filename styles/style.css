@@ -375,12 +375,12 @@ nav ul li a {
 	margin-bottom: 10%;
 }
 
-.testimonial {
+.testimonial { /* targets unique id */
 	position: relative;
 	width: 100%;
 }
 
-.testimonial-text {
+.testimonial-text { /* targets unique section id */
 	position: absolute; /* positions overlay background over the image */
 	background-color: #0000006b; /* adjust transparency to style */
 	color: #ffffff; /* font color from assignment instructions */
@@ -388,15 +388,14 @@ nav ul li a {
 	align-items: end; /* aligns banner text at end of each image container */
 	flex-wrap: wrap;
 
-
 	/* banner's height is the container's height to overlay banner text */
 	top: 0%; /* sets reference point for banner text position as top of container */
 	width: 100%; /* covers full width of image */
 	height: 100%; /* covers full height of image */
 }
 
-.testimonial-text p {
-	flex-basis: 100%
+.testimonial-text p { /* targets unique section id */
+	flex-basis: 100%;
 }
 
 
@@ -451,7 +450,7 @@ footer {
 	#fairtrade-localbakedgoods { /* targets unique section id */
 		display: flex; /* displays r */
 	}
-}	
+	
 /***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
 	#explore { /* targets unique section id */
 		
