@@ -432,6 +432,10 @@ footer {
 
 	#products-services { /* targets unique section id */
 		
+	}
+
+/***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
+	#explore { /* targets unique section id */
 		
 	}
 
@@ -444,6 +448,15 @@ footer {
 		gap: 5%; /* adds space between columns */
 	}
 
+/***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
+	#explore { /* targets unique section id */
+		
+	}
+
+/***************************************** STYLES TESTIMONIALS SECTION FOR TABLET *****************************************/
+	#testimonials { /* targets unique section id */
+		
+	}
 
 } /* closes tablet media query */
 
@@ -452,22 +465,31 @@ footer {
 
 /******************************************** STYLES FOR DESKTOP *********************************************/
 
+/******************************************** GLOBAL STYLES FOR DESKTOP *********************************************/
+
 @media screen and (min-width: 1100px) { /* applies to screens 1000 px and larger */
 
 	h1 {
-		font-size: 3.815rem;
+		font-size: 3.815rem; /* value from assignment instructions */
 	}
 
 	h2 {
-		font-size: 3.052rem;
+		font-size: 3.052rem; /* value from assignment instructions */
 	}
 
 	h3 {
-		font-size: 1.953rem;
+		font-size: 1.953rem; /* value from assignment instructions */
 	}
 
 	p {
-		font-size: 1rem;
+		font-size: 1rem; /* value from assignment instructions */
 	}
 
 }
+
+/************************************** STYLES PRODUCTS-SERVICES SECTION FOR DESKTOP **************************************/
+
+	#products-services { /* targets unique section id */
+		
+	}
+
