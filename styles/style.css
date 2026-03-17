@@ -123,9 +123,6 @@ a:active { /* when the user clicks the link */
 	color: #966f2c; /* color from the chart in assignment instructions */ 
 }
 
-a:visited { /* when the user sees a link they have already clicked */
-	color: #ffffff; /* color from the chart in assignment instructions */
-}
 
 /* GLOBAL BUTTON STYLING (EXPLORE OUR MENU BUTTONS) */
 
@@ -179,6 +176,7 @@ header {
 header img {
 	height: 2rem;
 	margin-top: 2rem;
+	margin-bottom: 1rem;
 }
 
 /* styles nav bar */
@@ -198,6 +196,12 @@ nav ul li {
 }
 
 /* styles anchor tags */
+nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 nav ul li a {
 	color: #ffffff;
 	text-decoration: none;
@@ -240,8 +244,7 @@ nav ul li a {
 }
 
 .banner-text p {
-	padding-top: 1rem;/* adds space between elements */
-	padding-bottom: 1rem; /* adds space between elements */
+	padding: 1rem;/* adds space between elements */
 }
 
 
@@ -312,7 +315,7 @@ nav ul li a {
 #view-locations { /* targets unique button id when the user is not interacting with it" */
 	background-color: transparent; /* colors from the chart in assignment instructions */
 	color: #ffffff;
-	border: #ffffff;
+	border: solid 1px #ffffff;
 }
 
 #view-locations:hover { /* targets unique button id when the user is hovering over it" */
@@ -437,8 +440,16 @@ footer {
 		font-size: 1rem; /* value from assignment instructions */
 	}
 
-/***************************************** STYLES HEADER FOR TABLET *****************************************/	
+/***************************************** STYLES about FOR TABLET *****************************************/	
+	.about > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
+	.about button {
+		width: 200px;
+	}
 
 
 /***************************************** STYLES WELCOME SECTION FOR TABLET *****************************************/
