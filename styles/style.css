@@ -54,12 +54,13 @@ table {
 /* no box-sizing rules found in CSS reset, SPA added this one to use screen size as border size for content */
 html {
  box-sizing: border-box;
+ margin-top: -1.5rem;
 }
 
 /***************************************** Styles Skiplinks *****************************************/
 .skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
     position: absolute; /* position absolute applied to ul */
-	top: -10em; /* moves skiplinks above/outside of the screen */
+	top: -20em; /* moves skiplinks above/outside of the screen */
 }
 
 .skiplinks a:focus { /* adds a "focus" pseudoclass for skiplinks */
@@ -177,6 +178,7 @@ header {
 /* styles logo */
 header img {
 	height: 2rem;
+	margin-top: 2rem;
 }
 
 /* styles nav bar */
