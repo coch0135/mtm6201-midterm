@@ -358,9 +358,6 @@ nav ul li a {
 
 /***************************************** STYLES TESTIMONIALS SECTION *****************************************/
 
-/********************************************* UNRESOLVED: TARO *********************************************/ 
-/* Testimonials not positioned over images */
-
 #testimonials { /* targets unique section id */
 	background-color: #000000; /* color from the chart in assignment instructions */
 	color: #ffffff; /* color from the chart in assignment instructions */
@@ -378,6 +375,7 @@ nav ul li a {
 .testimonial { /* targets unique id */
 	position: relative;
 	width: 100%;
+	margin-bottom: 1rem;
 }
 
 .testimonial-text { /* targets unique section id */
@@ -385,24 +383,21 @@ nav ul li a {
 	background-color: #0000006b; /* adjust transparency to style */
 	color: #ffffff; /* font color from assignment instructions */
 	display: flex; /* allows elements to be arranged */
-	align-items: end; /* aligns banner text at end of each image container */
-	flex-wrap: wrap;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: start; /* aligns banner text at end of each image container */
 
 	/* banner's height is the container's height to overlay banner text */
-	top: 0%; /* sets reference point for banner text position as top of container */
-	width: 100%; /* covers full width of image */
+	bottom: 0%; /* sets reference point for banner text position as top of container */
 	height: 100%; /* covers full height of image */
 }
 
-.testimonial-text p { /* targets unique section id */
-	flex-basis: 100%;
+.testimonial-text p, .testimonial-text h3 {
+	padding: 1rem;
 }
 
 
 /******************************************** STYLES FOOTER *********************************************/
-
-/********************************************* UNRESOLVED *********************************************/
-/* Is there a dividing line at the top of the footer? */
 
 footer {
 	background-color: #000000; /* color from the chart in assignment instructions */
@@ -410,6 +405,8 @@ footer {
 	display: flex; /* allows justify content */
 	justify-content: center; /* centers content */
 	padding-bottom: 2rem; /* adds extra padding to bottom */
+	border-top: solid 1px #ffffff;
+	padding-top: 1rem;
 }
 
 
