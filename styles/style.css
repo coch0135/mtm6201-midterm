@@ -160,20 +160,20 @@ button:active { /* when the user clicks the button */
 
 /******************************************** STYLES HEADER *********************************************/
 
-.header {
+.header { /* sets max width and adds padding to header class */
 	max-width: 1200px;
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
 
-header {
+header { /* styles section */
 	background-color: #000000; /* color from the chart in assignment instructions */
-	display: grid;
+	display: grid; /* allows elements to be arranged */
 	width: 100%;
 }
 
-/* styles logo */
-header img {
+
+header img {/* styles logo */
 	height: 2rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
@@ -198,14 +198,8 @@ nav ul li {
 /* styles anchor tags */
 nav ul li a {
 	color: #ffffff;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-nav ul li a {
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: bold;
+	text-decoration: none; /* removes underline */
+	font-weight: bold; /* bolds menu item text */
 }
 
 /***************************************** STYLES BANNER SECTION *****************************************/
@@ -276,20 +270,20 @@ nav ul li a {
 }
 
 #products-services aside { /* targets unique section id */
-	margin-top: 10%;
+	margin-top: 10%; /* adds space between elements */
 	margin-bottom: 10%;
 }
 
-#products-services img {
-	width: 50%;
+#products-services img { /* targets unique img id */
+	width: 50%; /* sizes img */
 }
 
 /***************************************** STYLES EXPLORE SECTION *****************************************/
 
 #explore { /* targets unique section id */
   	text-align: center; /* center aligns text */
-	background-image: url("../images/coffee-shop.jpeg");
-	background-size: cover;
+	background-image: url("../images/coffee-shop.jpeg"); /* sets image as container */
+	background-size: cover; /* image fills container */
 }
 
 #explore-text { /* targets unique wrapper id */
@@ -303,8 +297,8 @@ nav ul li a {
 	height: 100%; /* covers full height of image */
 }
 
-#explore-text aside {
-	margin-top: 3%;
+#explore-text aside { /* targets unique section id */
+	margin-top: 3%; /* adds space between elements */
 	margin-bottom: 3%;
 }
 
@@ -367,7 +361,7 @@ nav ul li a {
 #testimonials { /* targets unique section id */
 	background-color: #000000; /* color from the chart in assignment instructions */
 	color: #ffffff; /* color from the chart in assignment instructions */
-	padding-left: 5%;
+	padding-left: 5%; /* adds space between elements */
 	padding-right: 5%;
 	padding-top: 20%;
 	padding-bottom: 20%;
@@ -379,8 +373,8 @@ nav ul li a {
 }
 
 .testimonial { /* targets unique id */
-	position: relative;
-	width: 100%;
+	position: relative; /* positions txt over img */
+	width: 100%; /* positions txt over img */
 	margin-bottom: 1rem;
 }
 
@@ -389,8 +383,8 @@ nav ul li a {
 	background-color: #0000006b; /* adjust transparency to style */
 	color: #ffffff; /* font color from assignment instructions */
 	display: flex; /* allows elements to be arranged */
-	justify-content: flex-end;
-	flex-direction: column;
+	justify-content: flex-end; /* aligns text left */
+	flex-direction: column; /* arranges text in a column */
 	align-items: start; /* aligns banner text at end of each image container */
 
 	/* banner's height is the container's height to overlay banner text */
@@ -398,8 +392,8 @@ nav ul li a {
 	height: 100%; /* covers full height of image */
 }
 
-.testimonial-text p, .testimonial-text h3 {
-	padding: 1rem;
+.testimonial-text p, .testimonial-text h3 { /* targets the paragraphs and h3s in the testimonial-text class */
+	padding: 1rem; /* adds space between elements */
 }
 
 
@@ -411,8 +405,8 @@ footer {
 	display: flex; /* allows justify content */
 	justify-content: center; /* centers content */
 	padding-bottom: 2rem; /* adds extra padding to bottom */
-	border-top: solid 1px #ffffff;
-	padding-top: 1rem;
+	border-top: solid 1px #ffffff; /* adds dividing line at top of footer */
+	padding-top: 1rem; /* adds space between elements */
 }
 
 
@@ -441,14 +435,14 @@ footer {
 	}
 
 /***************************************** STYLES about FOR TABLET *****************************************/	
-	.about > div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+	.about > div { /* targets the content other than the image in the about section */
+		display: flex; /* allows elements to be arranged */
+		flex-direction: column; /* arranges elements in a column */
+		justify-content: center; /* centers content within the flex container */
 	}
 
-	.about button {
-		width: 200px;
+	.about button { /* targets the "learn more" button */
+		width: 200px; /* sets a width to keep it from expanding to fill the container */
 	}
 
 
