@@ -31,7 +31,7 @@
 
   <header class="header" role="banner"> <!-- wraps header with logo and nav menu, uses 'header' instead of 'div' and adds aria role for accessibility -->
 
-    <div class="">
+    <div> <!-- adds skiplinks -->
       <img src="images/my-coffee-shop-logo.svg" alt="logo"> <!-- adds logo to header -->
   
       <nav class="main-nav" role="navigation"> <!-- navigation menu with class for skiplinks and aria role -->
@@ -41,7 +41,7 @@
           <li><a href="#">Locations</a></li>
         </ul>
       </nav>
-    </div>
+    </div> <!-- closes skiplinks -->
 
   </header>
 
@@ -55,7 +55,7 @@
 
           <div class="banner-text"> <!-- wraps banner text to position over the image -->
 
-            <h1 role="heading" aria-level="1">EXPERIENCE COFFEE LIKE NEVER BEFORE</h1> <!-- adds aria role to h1 for accessibility -->
+            <h1 role="heading" aria-level="1">EXPERIENCE COFFEE LIKE NEVER BEFORE</h1> <!-- adds aria role to h1 for accessibility with aria-level to address html validation error -->
     
             <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
     
@@ -114,7 +114,7 @@
 
     <article id="explore" role="article"> <!-- CONTAINS EXPLORE SECTION, uses 'article' instead of 'div' and adds aria role and id for accessibility -->
 
-      <div class="explor-bg"></div>
+      <div class="explor-bg"></div> <!-- adds transparent overlay for styling in css -->
       <div class="wrapper" id="explore-text"> <!-- wraps explore section text with unique id for styling in css -->
 
         <aside id="our-menu" role="complementary"> <!-- contains our menu content, uses 'aside' instead of 'div' and adds aria role and id for accessibility -->
@@ -152,8 +152,8 @@
 
     </article> <!-- CLOSES ABOUT US SECTION -->
 
-    <article class="" id="testimonials" role="article"> <!-- TESTIMONIALS SECTION, uses 'aticle' instead of 'div' and adds id and aria role for accessibility -->
-      <div class="wrapper">
+    <article id="testimonials" role="article"> <!-- TESTIMONIALS SECTION, uses 'aticle' instead of 'div' and adds id and aria role for accessibility -->
+      <div class="wrapper"> <!-- wraps article content for styling in css -->
         <h3>TESTIMONIALS</h3>
         <h2>WHAT OUR CUSTOMERS SAY ABOUT US</h2>
   
@@ -185,7 +185,7 @@
           </aside> <!-- closes Susie F testimonial -->
   
         </div> <!-- closes testimonial section photos -->
-      </div>
+      </div> <!-- wraps article content wrapper -->
 
     </article> <!-- CLOSES TESTIMONIALS SECTION -->
 

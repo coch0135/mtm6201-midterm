@@ -49,9 +49,9 @@ table {
 	border-spacing: 0;
 }
 
-/***************************************** MY STYLING BEGINS HERE *****************************************/
+/***************************************** SPA CORRECTIONS/ADDITIONS TO CSS RESET *****************************************/
 
-/* no box-sizing rules found in CSS reset, SPA added this one to use screen size as border size for content */
+/* use screen size as border size for content */
 html {
  box-sizing: border-box;
  margin-top: -1.5rem;
@@ -60,6 +60,8 @@ html {
 body {
 	box-sizing: border-box;
 }
+
+/***************************************** MY STYLING BEGINS HERE *****************************************/
 
 /***************************************** Styles Skiplinks *****************************************/
 .skiplinks ul { /* allows skiplinks nav to hold other elements with a position property */
@@ -158,7 +160,7 @@ button:active { /* when the user clicks the button */
 	font-weight: bold;
 }
 
-.wrapper {
+.wrapper { /* sizes wrapper*/
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -168,8 +170,7 @@ button:active { /* when the user clicks the button */
 
 /******************************************** STYLES HEADER *********************************************/
 
-.header { /* sets max width and adds padding to header class */
-	/* max-width: 1200px; */
+.header { /* adds padding to header class */
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -256,7 +257,7 @@ nav ul li a {
 	/* padding: 5%; adds padding */
 }
 
-#welcome h2, #welcome h3, #welcome > div {
+#welcome h2, #welcome h3, #welcome > div { /* targets direct children of unique ids in this section to add padding */
 	padding: 1rem;
 }
 
@@ -299,27 +300,25 @@ nav ul li a {
 	position: relative;
 }
 
-.explor-bg {
+.explor-bg { /* targets background overlay */
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #0000006b;
-	z-index: 1;
+	z-index: 1; /* stacks over image */
 }
 
 #explore-text { /* targets unique wrapper id */
-	/* background-color: #0000006b; adjust transparency to style */
 	padding-top: 3%;
 	padding-bottom: 3%;
 	position: relative;
-	z-index: 2;
+	z-index: 2; /* stacks over background overlay and image */
 
 	/* banner's height is the container's height to overlay banner text */
 
 	width: 100%; /* covers full width of image */
 	height: 100%; /* covers full height of image */
-	z-index: 2;
 }
 
 #explore-text aside { /* targets unique section id */
@@ -357,12 +356,12 @@ nav ul li a {
 	/* padding: 5%; adds padding */
 }
 
-#about-us > div {
+#about-us > div { /* targets direct children of unique section ID to add padding */
 	padding: 1rem;
 }
 
-#about-us img {
-	width: calc(100% - 2rem);
+#about-us img { /* targets the background image for this section */
+	width: calc(100% - 2rem); /* calculates full width minus margin */
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
@@ -489,50 +488,48 @@ footer {
 
 	#products-services-asides { /* targets unique section id */
 		display: grid; /*allows elements to be arranged */
-		grid-template-columns: repeat(7, 1fr);
-		/* gap: 2rem; */
+		grid-template-columns: repeat(7, 1fr); /* grid has 7 equally sized columns */
 	}
 
-	#fair-trade {
-		grid-column: 1 / span 3;
+	#fair-trade { /* targets unique section id */
+		grid-column: 1 / span 3; /* positions element on columns 1-3 (top left) */
 	}
 
-	#local-baked-goods {
-		grid-column: 5 / span 3;
+	#local-baked-goods { /* targets unique section id */
+		grid-column: 5 / span 3; /* positions element on columns 5-7 (top right) */
 	}
 
-	#made-with-love {
-		grid-column: 3 / span 3;
+	#made-with-love { /* targets unique section id */
+		grid-column: 3 / span 3; /* positions element on columns 3-5 (bottom middle)*/
 	}
 
-	#products-services-asides img {
-		max-width: 200px;
+	#products-services-asides img { /* targets images in this section */
+		max-width: 200px; /* sets max width */
 	}
 
-	#products-services-asides p {
-		max-width: 400px;
+	#products-services-asides p { /* targets paragraphs in this section */
+		max-width: 400px; /* sets max width */
 	}
  
 	
 /***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
-	#explore > div { /* targets unique section id */
-		display: flex;
+	#explore > div { /* direct children of this unique section ID */
+		display: flex; /* allows elements to be arranged */
 	}
 
-	#our-menu, #locations {
-		display: flex;
-		flex-direction: column;
-		/* justify-content: center; */
-		align-items: center;
+	#our-menu, #locations { /* targets unique section IDs */
+		display: flex; /* allows elements to be arranged */
+		flex-direction: column; /* arranges elements vertically*/
+		align-items: center; /* centers content vertically within the container */
 	}
 
-	#our-menu h1, #locations h1 {
-		flex-grow: 1;
+	#our-menu h1, #locations h1 { /* targets h1s in this section */
+		flex-grow: 1; /* sizes h1 relative to container */
 	}
 
-	#our-menu button, #locations button {
-		justify-self: flex-end;
-		align-self: center;
+	#our-menu button, #locations button { /* targets buttons in this section */
+		justify-self: flex-end; /* positions buttons */
+		align-self: center; /* centers content vertically within the container */
 	}
 
 
@@ -546,11 +543,6 @@ footer {
 		gap: 5%; /* adds space between columns */
 	}
 
-/***************************************** STYLES EXPLORE SECTION FOR TABLET *****************************************/
-	#explore { /* targets unique section id */
-		
-	}
-
 /***************************************** STYLES TESTIMONIALS SECTION FOR TABLET *****************************************/
 	#testimonials .wrapper > div { /* targets unique section id */
 		display: flex;
@@ -558,8 +550,6 @@ footer {
 	}
 
 } /* closes tablet media query */
-
-
 
 
 /******************************************** STYLES FOR DESKTOP *********************************************/
@@ -591,42 +581,42 @@ footer {
 		flex-direction: row; /* arranges elements in a row */
 	}
 
-	#products-services aside { /* targets unique id */
+	#products-services aside { /* targets asides within this section */
 		padding-left: 3rem; /* adds space between items */
 		padding-right: 3rem; /* adds space between items */
 	}
 
-	.header > div {
-		display:flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0 auto;
-		width: 100%;
-		max-width: 1200px;
+	.header > div { /* targets direct children of the header class */
+		display:flex; /* allows elements to be arranged */
+		justify-content: space-between; /* adds space between flex items */
+		align-items: center; /* adds space between items */
+		margin: 0 auto; /* sets margin */
+		width: 100%; /* sets width */
+		max-width: 1200px; /* sets max width */
 	}
 
-	.header nav {
-		width: 100%;
-		display: flex;
-		align-items: flex-start;
-		justify-content: end;
+	.header nav { /* targets navigation menu */
+		width: 100%; /* sets width */
+		display: flex; /* allows elements to be arranged */
+		align-items: flex-start; /* positions content */
+		justify-content: end; /* positions content */
 	}
 
-	.header ul {
-		margin-top: 2rem;
+	.header ul { /* targets nav list */
+		margin-top: 2rem; /* adds margin*/
 		margin-bottom: 1rem;
 	}
 
-	.header li {
-		width: 80px;
+	.header li { /* targets nav list items */
+		width: 80px; /* sets width */
 	}
 
-	.header img {
-		width: unset;
+	.header img { /* targets logo */
+		width: unset; /* resets width */
 	}
 
-	.banner-overlay {
-		justify-content: center;
+	.banner-overlay { /* targets class */
+		justify-content: center; /* distributes space evenly to center content */
 	}
 
 } /* closes desktop media query */
